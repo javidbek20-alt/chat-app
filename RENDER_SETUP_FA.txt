@@ -1,0 +1,28 @@
+راهنمای کوتاه نصب در Render رایگان
+
+1) فایل‌ها را در GitHub آپلود کن.
+2) در Render یک Web Service بساز.
+3) Build Command:
+   pip install -r requirements.txt
+4) Start Command:
+   python server.py
+5) اگر PostgreSQL می‌خواهی:
+   - در Render یا Neon/Supabase یک PostgreSQL رایگان بساز.
+   - مقدار DATABASE_URL را در Environment Variables اضافه کن.
+   - اگر DATABASE_URL نباشد برنامه خودش با SQLite کار می‌کند.
+
+امکانات اضافه شده:
+- Reply Message
+- Emoji Picker
+- PostgreSQL optional با DATABASE_URL
+- Browser Notifications / PWA Service Worker
+- Group Chat
+- Video Call با WebRTC signaling
+- Message Search
+- File Upload
+- Story/Status 24 ساعته
+- Better animations
+
+نکته مهم:
+Push Notification کامل وقتی مرورگر بسته باشد نیاز به VAPID/Web Push دارد. در این نسخه Notification وقتی سایت باز/فعال در مرورگر یا PWA باشد کار می‌کند.
+برای Render رایگان فایل‌ها را خیلی بزرگ نفرست، چون database و RAM محدود است.
